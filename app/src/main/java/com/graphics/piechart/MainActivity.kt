@@ -24,10 +24,11 @@ class MainActivity : AppCompatActivity() {
         pies.add(Pie.PiePart(4F))
         pies.add(Pie.PiePart(7F))
         pies.add(Pie.PiePart(3F))
+        pcv.pie = Pie(pies)
         pies.add(Pie.PiePart(9F))
         pies.add(Pie.PiePart(3F))
         pies.add(Pie.PiePart(3F))
-        pcv.pie = Pie(pies)
+        pcv.notifyPieChange()
 
     }
 }
